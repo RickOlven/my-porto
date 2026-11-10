@@ -7,8 +7,8 @@
 body {
   color: #1e293b;
   -webkit-font-smoothing: antialiased;
-  line-height: 1.6;
 }
+/* NAVIGATION */
 .navbar {
   display: flex;
   border-bottom: 1px solid #e2e8f0;
@@ -34,27 +34,109 @@ body {
   gap: 20px;
   font-weight: 600;
 }
-.links-btn{
-    border: 1px solid #CBD5E1;
-    border-radius: 8px;
+.links-btn {
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
 }
 .nav-links a {
   text-decoration: none;
-  color: #64748B;
+  color: #64748b;
   gap: 8px;
   align-items: center;
   display: flex;
   padding: 5px 10px;
 }
-.nav-links a i{
-    font-size: 1.2rem;
-    color: #64748B;
+.nav-links a i {
+  font-size: 1.2rem;
+  color: #64748b;
 }
-.nav-links a.links-btn:hover{
-    color: #2563EB;
-    background-color: #EFF6FF;
-    border-color: #2563EB;
+.nav-links a.links-btn:hover {
+  color: #2563eb;
+  background-color: #eff6ff;
+  border-color: #2563eb;
 }
-.nav-links a.links-btn:hover i{
-    color: #2563EB;
+.nav-links a.links-btn:hover i {
+  color: #2563eb;
+}
+/* HERO SECTION */
+#hero {
+  display: flex;
+  padding: 80px;
+  color: #1e293b;
+}
+.hero-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+  max-width: 1200px;
+  gap: 40px;
+}
+.hero-items {
+  display: flex;
+  flex-direction: column;
+  max-width: 650px;
+}
+.hero-intro {
+  font-size: 36px;
+  font-weight: 700;
+  color: #2563eb;
+}
+.hero-name {
+  font-size: 64px;
+  text-transform: uppercase;
+  letter-spacing: -0.025em;
+  max-width: 400px;
+  margin-bottom: 12px;
+}
+.hero-badge {
+  font-size: 24px;
+  color: #475569;
+}
+.hero-description {
+  font-size: 18px;
+  max-width: 600px;
+  line-height: 1.7;
+}
+.hero-action {
+  display: flex;
+  gap: 20px;
+  padding: 20px 0;
+}
+.hero-action a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 12px 24px;
+  transition: all 0.2s ease;
+}
+.button-primary {
+  background-color: #2563eb;
+  color: #ffffff;
+  border: 1px solid #2563eb;
+}
+.button-primary:hover {
+  background-color: #1d4ed8;
+}
+.button-secondary {
+  background-color: transparent;
+  color: #64748b;
+  border: 1px solid #cbd5e1;
+}
+.button-secondary:hover {
+  color: #2563eb;
+  border-color: #2563eb;
+  background-color: #eff6ff;
+}
+.hero-image {
+  width: 100%;
+  max-width: 450px;
+  height: auto; 
+  border-radius: 12px;
+  box-shadow:
+    0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04); 
+  border: 1px solid #e2e8f0; 
 }
